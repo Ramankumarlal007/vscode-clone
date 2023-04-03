@@ -1,0 +1,10 @@
+* {
+    background-color: aquamarine;
+}
+ul li {
+    background-color: chartreuse;
+}
+
+div + p {
+    color: rgb(255, 145, 0);
+}
