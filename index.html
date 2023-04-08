@@ -19,40 +19,42 @@
     <title>Visual Studio Code - Code Editing Clone</title>
   </head>
   <body class="bg-[#2c2c32]">
-    <nav class="mx-5 my-4 flex justify-between text-white md:ml-72">
-      <div class="flex space-x-2 items-center justify-center md:">
-        <div><img src="./asset/icon.png" alt="" width="30px" /></div>
-        <div><h1 class="text-2xl">Visual Studio Code</h1></div>
-        <div class="hidden md:flex justify-center items-center gap-9 text-lg">
-          <div>Docs</div>
-          <div>Updates</div>
-          <div>Blog</div>
-          <div>API</div>
-          <div>Extensions</div>
-          <div>FAQ</div>
-          <div>Learn</div>
-          <div>Search</div>
-        </div>
-      </div>
-
-    <div class=" hidden md:flex">
-      <div class="flex bg-[#242424] space-x-2 px-6 py-3 ">
-        <img src="https://code.visualstudio.com/assets/icons/search.svg" alt="" width="25px">
-        <button class="bg-[#242424]" type="submit">Search Docs</button>
-      </div>
-      <div class="flex bg-[#0066b8] space-x-2 px-6 py-3 ">
-        <img src="https://code.visualstudio.com/assets/icons/download.svg" alt="" width="25px">
-        <button class="bg-[#0066b8]" type="submit">Search Docs</button>
+<div class="sticky top-0 bg-[#25252b]">
+  <nav class="mx-5 my-4 flex justify-between text-white md:ml-72">
+    <div class="flex space-x-2 items-center justify-center md:">
+      <div><img src="./asset/icon.png" alt="" width="30px" /></div>
+      <div><h1 class="text-2xl">Visual Studio Code</h1></div>
+      <div class="hidden md:flex justify-center items-center gap-9 text-lg">
+        <div>Docs</div>
+        <div>Updates</div>
+        <div>Blog</div>
+        <div>API</div>
+        <div>Extensions</div>
+        <div>FAQ</div>
+        <div>Learn</div>
+        <div>Search</div>
       </div>
     </div>
-      <div>
-        <ul class="px-4 py-3 hover:bg-[#0072be] rounded-[5px] md:hidden">
-          <li class="h-0.5 w-6 my-1 bg-white"></li>
-          <li class="h-0.5 w-6 my-1 bg-white"></li>
-          <li class="h-0.5 w-6 my-1 bg-white"></li>
-        </ul>
-      </div>
-    </nav>
+
+  <div class=" hidden md:flex">
+    <div class="flex bg-[#242424] space-x-2 px-6 py-3 ">
+      <img src="https://code.visualstudio.com/assets/icons/search.svg" alt="" width="25px">
+      <button class="bg-[#242424]" type="submit">Search Docs</button>
+    </div>
+    <div class="flex bg-[#0066b8] space-x-2 px-6 py-3 ">
+      <img src="https://code.visualstudio.com/assets/icons/download.svg" alt="" width="25px">
+      <button class="bg-[#0066b8]" type="submit">Download</button>
+    </div>
+  </div>
+    <div>
+      <ul class="px-4 py-3 hover:bg-[#0072be] rounded-[5px] md:hidden">
+        <li class="h-0.5 w-6 my-1 bg-white"></li>
+        <li class="h-0.5 w-6 my-1 bg-white"></li>
+        <li class="h-0.5 w-6 my-1 bg-white"></li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
 
     <div
@@ -164,47 +166,62 @@
       <div class="text-center text-2xl my-2">Extensions</div>
       </div>
     </div>
-    <div class="bg-white py-20">
+    <div class="bg-white py-20 md:hidden">
       <div class="flex justify-center">
         <img src="./asset/home-intellisense.svg" alt="" srcset="">
       </div>
      <div class="mx-8 text-[#444444]">
       <div>
-        <h1 class="text-2xl">Meet IntelliSense.</h1>
+        <h1 class="text-4xl">Meet IntelliSense.</h1>
       </div>
       <div class="my-10">
-        <p class="text-2xl">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+        <p class="text-2xl w-2/3 leading-10">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
       </div>
      </div>
     </div>
-    <div class="py-20 bg-slate-200">
+    <div class="bg-white py-20 hidden md:inline-flex justify-center items-center px-60 space-x-[25%]">
       <div class="flex justify-center">
-        <img src="./asset/home-debug.svg" alt="" srcset="">
+        <img src="./asset/home-intellisense.svg" alt="" srcset="" width="750px">
       </div>
      <div class="mx-8 text-[#444444]">
       <div>
-        <h1 class="text-2xl">Print statement debugging is a thing of the past.</h1>
+        <h1 class="text-4xl">Meet IntelliSense.</h1>
       </div>
       <div class="my-10">
-        <p class="text-2xl">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+        <p class="text-2xl w-2/3 leading-10">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
       </div>
      </div>
     </div>
-    <div class="py-20 bg-white">
+    <div>
+      <div class="py-20 bg-slate-200 md:grid grid-cols-2 justify-items-center">
+        <div class="flex justify-center md:flex order-2">
+          <img src="./asset/home-debug.svg" alt="" srcset="">
+        </div>
+       <div class="mx-8 text-[#444444] pl-56">
+        <div>
+          <h1 class="text-2xl ">Print statement debugging is a thing of the past.</h1>
+        </div>
+        <div class="my-10 w-2/3 ">
+          <p class="text-2xl leading-relaxed">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+        </div>
+       </div>
+      </div>
+    </div>
+    <div class="py-20 bg-white md:grid grid-cols-2 justify-items-center">
       <div class="flex justify-center">
         <img src="./asset/home-git.svg" alt="" srcset="">
       </div>
-     <div class="mx-8 text-[#444444]">
+     <div class="mx-8 text-[#444444] md:mx-auto">
       <div>
         <h1 class="text-2xl">Git commands built-in.</h1>
       </div>
       <div class="my-10">
-        <p class="text-2xl">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+        <p class="text-2xl md:w-2/3">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
       </div>
      </div>
     </div>
-    <div class="py-20 bg-slate-200">
-      <div class="flex justify-center  mb-8 ">
+    <div class="py-20 bg-slate-200 md:grid grid-cols-2 justify-items-center">
+      <div class="flex justify-center  mb-8 md:order-2">
         <img src="./asset/Hundreds-of-Extensions.png" alt="" srcset="" class="w-80">
       </div>
      <div class="mx-8">
@@ -212,31 +229,35 @@
         <h1 class="text-2xl">Extensible and customizable.</h1>
       </div>
       <div class="my-10">
-        <p class="text-2xl">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <span class="text-[#0071BC]"><a href="https://code.visualstudio.com/docs/editor/extension-marketplace">Learn more about extensions.</a></span></p>`
+        <p class="text-2xl md:w-2/3">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <span class="text-[#0071BC]"><a href="https://code.visualstudio.com/docs/editor/extension-marketplace">Learn more about extensions.</a></span></p>`
         
       </div>
      </div>
     </div>
 <div>
-  <div class="bg-white text-2xl py-20 text-[#444444]">
+  <div class="bg-white text-2xl py-20 text-[#444444] md:grid grid-cols-2 justify-items-center">
     <div class="flex justify-center bg-white">
       <img src="./asset/home-azure.svg" alt="" srcset="" class="bg-white">
     </div>
-    <div class="my-10 text-center">
+    <div>
+      <div class="mx-10">
       <h1 class="">Deploy with confidence and ease</h1>
     </div>
-    <div class="mx-4">
-      <p>With <a class="text-[#0071BC] hover:cursor-pointer hover:underline " href="http://azure.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a> you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, <span class="text-[#0071BC] hover:underline hover:cursor-pointer"><a href="https://code.visualstudio.com/docs/azure/extensions" target="" rel="noopener noreferrer">all from within VS Code</a></span></p>
+    <div class="mx-10 py-5">
+      <p class="md:w-2/3">With <a class="text-[#0071BC] hover:cursor-pointer hover:underline " href="http://azure.microsoft.com/en-us/" target="_blank" rel="noopener noreferrer">Microsoft Azure</a> you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, <span class="text-[#0071BC] hover:underline hover:cursor-pointer"><a href="https://code.visualstudio.com/docs/azure/extensions" target="" rel="noopener noreferrer">all from within VS Code</a></span></p>
     </div>
+  </div>
   </div>
 <div class="bg-[#f5f5f5]">
   <div class="bg-slate-200 ">
-    <div><h1 class="text-center pt-20 pb-10 text-[#444444] text-2xl">VS Code for</h1></div>
-<div class="mx-8">
-  <div class="grid grid-cols-2 justify-items-left space-y-5 mt-7 pb-8">
-    <div class="flex  items-center space-x-2">
-      <img src="./asset/javascript.svg" alt=""><span>javascript</span>
+    <div>
+      <h1 class="text-center pt-20 pb-10 text-[#444444] text-2xl">VS Code for</h1>
     </div>
+<div class="flex justify-center items-center gap-64 my-24 md:grid gap-4">  
+   <div class="grid space-y-10 justify-items-center md:flex space-x-8 justify-around">
+    <div class="flex-wrap items-center space-x-2">
+      <p><img src="./asset/javascript.svg" alt=""> "Javascript"</p>
+    </div> 
     <div class="flex items-center space-x-2">
       <img src="./asset/python.svg" alt=""><span>Python</span>
     </div> 
@@ -251,10 +272,12 @@
     </div>
     <div class="flex items-center space-x-2">
       <img src="./asset/cpp.svg" alt=""><span>C/C++</span>
-    </div> 
-     <div class="flex items-center space-x-2">
-      <img src="./asset/json.svg" alt=""><span>JSON</span>
     </div>
+   </div>
+   <div class="grid space-y-10 justify-items-center md:flex space-x-8 justify-around">
+    <div class="inline items-center space-x-2">
+      <img class="inline" src="./asset/json.svg" alt=""><span>JSON</span>
+    </div> 
     <div class="flex items-center space-x-2">
       <img src="./asset/powershell.svg" alt=""><span>Powershell</span>
     </div> 
@@ -272,192 +295,203 @@
     </div>
    </div>
 </div>
-  </div>
-  <div>
-    <p class="bg-white text-[#0071bc] text-center"><a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Programming%20Languages&amp;sortBy=Installs" aria-label="and many more languages on the Marketplace">and many more languages on the Marketplace...</a></p>
-  </div>
-  <div class="bg-white text-white flex justify-center mt-20 pb-20">
-   <button type="submit" class="bg-blue-600 text-2xl px-10 py-4 rounded-sm">Get Started Now</button>
+<div>
+  <p class="bg-slate-200 text-[#0071bc] text-center text-2xl"><a href="https://marketplace.visualstudio.com/search?target=VSCode&amp;category=Programming%20Languages&amp;sortBy=Installs" aria-label="and many more languages on the Marketplace">and many more languages on the Marketplace...</a></p>
+</div>
+<div class="bg-slate-200 text-white flex justify-center mt-20 pb-20">
+ <button type="submit" class="bg-blue-600 text-2xl px-10 py-4 rounded-sm">Get Started Now</button>
+</div>
   </div>
 </div>
 </div>
 
 <div class="bg-white">
-  <div class="bg-white py-20">
-    <img class="w-52 mx-auto" src="https://code.visualstudio.com/assets/images/windows-logo.png" alt="" srcset="">
-  </div>
-<div class="flex items-center justify-center pb-7 cursor-pointer  ">
-  <button class="bg-[#0066b8] px-36 py-5 text-white">
-    <div class="flex space-x-2">
-      <div class="bg-[#0066b8]">
-        <img class="w-5" src="./asset/arrow.svg" alt="" srcset="">
+<div class="md:flex justify-around items-center">
+  <div class="window">
+    <div class="bg-white py-20">
+      <img class="w-52 mx-auto" src="https://code.visualstudio.com/assets/images/windows-logo.png" alt="" srcset="">
+    </div>
+  <div class="flex items-center justify-center pb-7 cursor-pointer  ">
+    <button class="bg-[#0066b8] px-36 py-5 text-white">
+      <div class="flex space-x-2">
+        <div class="bg-[#0066b8]">
+          <img class="w-5" src="./asset/arrow.svg" alt="" srcset="">
+        </div>
+        <div>
+          <span class="text-lg">Windows</span>
+        </div>
       </div>
       <div>
-        <span class="text-lg">Windows</span>
+        <small>Windows 8, 10, 11</small>
+      </div>
+    </button>
+  </div>
+  <div class="flex justify-center items-center">
+    <table class="window-bit table-auto border-separate border-spacing-2 text-white">
+      <tr>
+        <td class="text-[#0066b8]">
+          <strong>User Installer</strong>
+        </td>
+        <td class="bg-[#0066b8]" ><a href="#" aria-label="Install 64 bit" >x64</a></td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >x86</a></td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
+      </tr>
+      <tr>
+        <td>
+          <strong class="text-[#0066b8]">System Installer</strong>
+        </td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >x86</a></td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
+      </tr>
+      <tr>
+        <td>
+          <strong class="text-[#0066b8]">.Zip</strong>
+        </td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >x86</a></td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
+      </tr>
+      <tr>
+        <td class="text-[#0066b8]">
+          <strong>CLI</strong>
+        </td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >x86</a></td>
+        <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
+      </tr>
+    
+    </table>
+  
+  
+  </div>
+  </div>
+  <div class="linux">
+    <div class="flex justify-center">
+      <img src="https://code.visualstudio.com/assets/images/linux-logo.png" alt="" srcset="">
+    </div>
+    <div class="flex justify-center space-x-2 bg-white pt-8">
+      <div class="bg-[#0066B8] px-10 py-5">
+        <div class=" inline-flex space-x-2">
+          <img class="w-5" src="./asset/arrow.svg" alt="" srcset=""> 
+          <button class="text-white" type="submit">.deb</button>
+        </div>
+        <div class="text-white"><small>Debian, Ubuntu</small></div>
+      </div>
+      <div class="bg-[#0066B8] px-6 py-5">
+        <div class=" inline-flex space-x-2">
+          <img class="w-5" src="./asset/arrow.svg" alt="" srcset=""> 
+          <button class="text-white" type="submit">.rpm</button>
+        </div>
+        <div class="text-white"><small>Red Hat, Fedora, SUSE</small></div>
       </div>
     </div>
-    <div>
-      <small>Windows 8, 10, 11</small>
+    <div class="flex justify-center bg-white py-10">
+      <table class="window-bit table-auto border-separate border-spacing-2 text-white">
+        <tr>
+          <td class="text-[#070a0e]">
+            <strong>.deb</strong>
+          </td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >Arm32</a></td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
+        </tr>
+        <tr>
+          <td>
+            <strong class="text-[#070a0e]">.rpm</strong>
+          </td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >Arm32</a></td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
+        </tr>
+        <tr>
+          <td>
+            <strong class="text-[#070a0e]">.tar.gz</strong>
+          </td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >Arm32</a></td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
+        </tr>
+        <tr>
+          <td>
+            <strong class="text-[#070a0e]">Snap</strong>
+          </td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >Snap Store</a></td>
+          
+        </tr>
+        <tr >
+          <td>
+            <strong class="text-[#060c14]">CLI</strong>
+          </td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >Arm32</a></td>
+          <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
+        </tr>
+      </table>
     </div>
-  </button>
-</div>
-<div class="flex justify-center items-center">
-  <table class="window-bit table-auto border-separate border-spacing-2 text-white">
-    <tr>
-      <td class="text-[#0066b8]">
-        <strong>User Installer</strong>
-      </td>
-      <td class="bg-[#0066b8]" ><a href="#" aria-label="Install 64 bit" >x64</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >x86</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
-    </tr>
-    <tr>
-      <td>
-        <strong class="text-[#0066b8]">System Installer</strong>
-      </td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >x86</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
-    </tr>
-    <tr>
-      <td>
-        <strong class="text-[#0066b8]">.Zip</strong>
-      </td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >x86</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
-    </tr>
-    <tr>
-      <td class="text-[#0066b8]">
-        <strong>CLI</strong>
-      </td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >x86</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
-    </tr>
-  
-  </table>
-
-
-</div>
-<div class="flex justify-center">
-  <img src="https://code.visualstudio.com/assets/images/linux-logo.png" alt="" srcset="">
-</div>
-</div>
-<div class="flex justify-center space-x-2 bg-white pt-8">
-  <div class="bg-[#0066B8] px-10 py-5">
-    <div class=" inline-flex space-x-2">
-      <img class="w-5" src="./asset/arrow.svg" alt="" srcset=""> 
-      <button class="text-white" type="submit">.deb</button>
-    </div>
-    <div class="text-white"><small>Debian, Ubuntu</small></div>
+   
   </div>
-  <div class="bg-[#0066B8] px-6 py-5">
-    <div class=" inline-flex space-x-2">
-      <img class="w-5" src="./asset/arrow.svg" alt="" srcset=""> 
-      <button class="text-white" type="submit">.rpm</button>
+  <div class="apple">
+    <div class="bg-white">
+      <img class="mx-auto" src="https://code.visualstudio.com/assets/images/apple-logo.svg" alt="" srcset="">
     </div>
-    <div class="text-white"><small>Red Hat, Fedora, SUSE</small></div>
-  </div>
-</div>
-<div class="flex justify-center bg-white py-10">
-  <table class="window-bit table-auto border-separate border-spacing-2 text-white">
-    <tr>
-      <td class="text-[#070a0e]">
-        <strong>.deb</strong>
-      </td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >Arm32</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
-    </tr>
-    <tr>
-      <td>
-        <strong class="text-[#070a0e]">.rpm</strong>
-      </td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >Arm32</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
-    </tr>
-    <tr>
-      <td>
-        <strong class="text-[#070a0e]">.tar.gz</strong>
-      </td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >Arm32</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
-    </tr>
-    <tr>
-      <td>
-        <strong class="text-[#070a0e]">Snap</strong>
-      </td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >Snap Store</a></td>
-      
-    </tr>
-    <tr >
-      <td>
-        <strong class="text-[#060c14]">CLI</strong>
-      </td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 64 bit" >x64</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install 86 bit" >Arm32</a></td>
-      <td class="bg-[#0066b8]"><a href="#" aria-label="Install Arm64" >Arm64</a></td>
-    </tr>
-  </table>
-</div>
-<div class="bg-white">
-  <img class="mx-auto" src="https://code.visualstudio.com/assets/images/apple-logo.svg" alt="" srcset="">
-</div>
-<div class="bg-white flex justify-center">
- <div class="bg-[#0066b8] text-white grid grid-cols-1 py-5 px-36 items-center my-10">
-    <div class="flex text-white space-x-6">
-      <img class="w-5" src="./asset/arrow.svg" alt="" sizes="" srcset="">
-      <button type="submit">Mac</button>
+    <div class="bg-white flex justify-center">
+     <div class="bg-[#0066b8] text-white grid grid-cols-1 py-5 px-36 items-center my-10">
+        <div class="flex text-white space-x-6">
+          <img class="w-5" src="./asset/arrow.svg" alt="" sizes="" srcset="">
+          <button type="submit">Mac</button>
+        </div>
+        <div><small>macOS 10.11+</small></div>
+      </div>
     </div>
-    <div><small>macOS 10.11+</small></div>
+    <div class="bg-white pb-20">
+      <table class="mx-auto border-separate border-spacing-3 text-white">
+        <tr>
+          <td class="text-black">
+            <strong>.zip</strong>
+          </td>
+          <td class="bg-[#0066B8]">Intel chip</td>
+          <td class="bg-[#0066B8]">Apple silicon</td>
+          <td class="bg-[#0066B8]">Universal</td>
+        </tr>
+        <tr>
+          <td>
+            <strong class="text-black">CLI</strong>
+          </td>
+          <td class="bg-[#0066B8]">Intel chip</td>
+          <td class="bg-[#0066B8]">Apple silicon</td>
+        </tr>
+      </table>
+    </div>
   </div>
-</div>
-<div class="bg-white pb-20">
-  <table class="mx-auto border-separate border-spacing-3 text-white">
-    <tr>
-      <td class="text-black">
-        <strong>.zip</strong>
-      </td>
-      <td class="bg-[#0066B8]">Intel chip</td>
-      <td class="bg-[#0066B8]">Apple silicon</td>
-      <td class="bg-[#0066B8]">Universal</td>
-    </tr>
-    <tr>
-      <td>
-        <strong class="text-black">CLI</strong>
-      </td>
-      <td class="bg-[#0066B8]">Intel chip</td>
-      <td class="bg-[#0066B8]">Apple silicon</td>
-    </tr>
-  </table>
 </div>
 <div class="bg-[#f5f5f5]">
-  <div class="pb-28">
-    <h1 class="text-xl font-semibold text-center">
+ <div class="md:flex justify-around py-12 text-4xl">
+  <div class="pb-28 text-2xl">
+    <h1 class=" font-semibold text-center">
       Want new features sooner?
     </h1>
     <p class="text-center">Get the <a class="text-[#00668b]" href="https://code.visualstudio.com/insiders" target="_blank" rel="noopener noreferrer">Insider build</a> instead.</p>
   </div>
-  <div>
-    <h2 class="text-center font-semibold text-lg">Use <a class="text-[#00668b]" href="https://vscode.dev/">vscode.dev</a> for quick edits online!</h2>
-    <p class="text-center pt-4 pb-32" >GitHub, Azure Repos, and local files.</p>
+  <div class="">
+    <h2 class="text-center font-semibold text-x">Use <a class="text-[#00668b]" href="https://vscode.dev/">vscode.dev</a> for quick edits online!</h2>
+    <p class="text-center pt-4 pb-32 text-2xl" >GitHub, Azure Repos, and local files.</p>
   </div>
+ </div>
   <div>
   <div class="mx-auto">
       <div>
-        <h3 class="text-center text-[#6c6c6c] text-xl mx-auto">License and Privacy Terms </h3> 
+        <h3 class="text-center text-[#6c6c6c] text-2xl mx-auto">License and Privacy Terms </h3> 
       </div>
  <div>
-  <p class="w-[62%] mx-auto pb-10 pt-5 leading-10">
+  <p class="w-[62%] mx-auto pb-10 pt-5 leading-10 md:w-[36%] lead">
     By downloading and using Visual Studio Code, you agree to the <a class="text-[#00668b]" id="" href="https://code.visualstudio.com/License/">license terms</a> and <a class="text-[#00668b]" href="https://privacy.microsoft.com/privacystatement">privacy statement</a>. VS
     Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a class="text-[#00668b]" href="https://code.visualstudio.com/docs/supporting/FAQ#_how-to-disable-crash-reporting">How to Disable Crash Reporting</a> to learn how to disable it.
 </p>
  </div>
   </div>
-<footer class="bg-[#333] flex-col space-y-5 py-10 pl-4">
+<footer class="bg-[#333] flex-col gap-7 py-10 pl-4">
+<div class="grid justify-items-start gap-10 md:flex justify-around text-xl">
   <div>
     <ul class="flex space-x-9 text-white">
       <li>Hello from Seattle.</li>
@@ -474,6 +508,7 @@
       <li><img src="https://code.visualstudio.com/assets/images/microsoft-logo.png" alt="" srcset="" width="100px"> <span>@ 2023 Microsoft</span></li>
     </ul>
   </div>
+</div>
 </footer>
   </body>
 </html>
